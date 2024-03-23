@@ -6,8 +6,6 @@ using UnityEngine;
 public class SquarePlayer : Character
 {
     GameObject squarePrefab;
-    [SerializeField] private GameObject bulletPrefab;
-    [SerializeField] private float bulletSpeed = 20.0f;
    
 
 
@@ -21,7 +19,6 @@ public class SquarePlayer : Character
     {
         base.Start();
         speed = 15f;
-        bulletSpeed = 20.0f;
     }
 
     private void FixedUpdate()
